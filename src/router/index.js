@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import GalleryView from "../views/GalleryView.vue";
@@ -7,7 +7,7 @@ import EditArtworkView from "../views/EditArtworkView.vue";
 import SobreInspiraArtView from "../views/SobreInspiraArtView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL), //import.meta.env.BASE_URL toma el base configurado por Vite.
+  history: createWebHashHistory(import.meta.env.BASE_URL), //createWebHashHistory() is used for hash-based routing
   routes: [
     {
       path: "/",
