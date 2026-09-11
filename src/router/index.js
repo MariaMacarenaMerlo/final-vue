@@ -7,7 +7,7 @@ import EditArtworkView from "../views/EditArtworkView.vue";
 import SobreInspiraArtView from "../views/SobreInspiraArtView.vue";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL), //import.meta.env.BASE_URL toma el base configurado por Vite.
   routes: [
     {
       path: "/",
